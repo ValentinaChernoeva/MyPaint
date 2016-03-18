@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		564A9FAFFAA2057A284D1E3B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E403D1D8C1D080677EC72663 /* libPods.a */; };
+		A713A5341C68AD5C00B911D3 /* DrawingCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A713A5331C68AD5C00B911D3 /* DrawingCommand.m */; };
+		A713A5371C68AE3500B911D3 /* LineDrawingCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A713A5361C68AE3500B911D3 /* LineDrawingCommand.m */; };
+		A713A53A1C68AE5600B911D3 /* RectDrawingCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A713A5391C68AE5600B911D3 /* RectDrawingCommand.m */; };
+		A713A53D1C68B30600B911D3 /* CommandExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = A713A53C1C68B30600B911D3 /* CommandExecutor.m */; };
+		A7173C1D1C61F6F900F8D49F /* DrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7173C1C1C61F6F900F8D49F /* DrawingViewController.m */; };
+		A7173C241C62026700F8D49F /* InteractivePainterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7173C231C62026700F8D49F /* InteractivePainterView.m */; };
+		A7578CDD1C64714E006F6165 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A7578CDC1C64714E006F6165 /* UIView+Additions.m */; };
+		A7A105F41C86DB6800C6DBFC /* DrawingProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A105F31C86DB6800C6DBFC /* DrawingProperty.m */; };
+		A7A107AB1C98364C00C6DBFC /* PencilDrawingCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A107AA1C98364C00C6DBFC /* PencilDrawingCommand.m */; };
+		AD4BB8871B10D56C00E14904 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4BB8861B10D56C00E14904 /* main.m */; };
+		AD4BB88A1B10D56C00E14904 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4BB8891B10D56C00E14904 /* AppDelegate.m */; };
+		AD4BB8901B10D56C00E14904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4BB88E1B10D56C00E14904 /* Main.storyboard */; };
+		AD4BB8921B10D56C00E14904 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4BB8911B10D56C00E14904 /* Images.xcassets */; };
+		AD4BB8951B10D56C00E14904 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4BB8931B10D56C00E14904 /* LaunchScreen.xib */; };
+		AD4BB8A11B10D56C00E14904 /* MyPaintTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4BB8A01B10D56C00E14904 /* MyPaintTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD4BB89B1B10D56C00E14904 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD4BB8791B10D56C00E14904 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD4BB8801B10D56C00E14904;
+			remoteInfo = MyPaint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A713A5321C68AD5C00B911D3 /* DrawingCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingCommand.h; sourceTree = "<group>"; };
+		A713A5331C68AD5C00B911D3 /* DrawingCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingCommand.m; sourceTree = "<group>"; };
+		A713A5351C68AE3500B911D3 /* LineDrawingCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineDrawingCommand.h; sourceTree = "<group>"; };
+		A713A5361C68AE3500B911D3 /* LineDrawingCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineDrawingCommand.m; sourceTree = "<group>"; };
+		A713A5381C68AE5600B911D3 /* RectDrawingCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectDrawingCommand.h; sourceTree = "<group>"; };
+		A713A5391C68AE5600B911D3 /* RectDrawingCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectDrawingCommand.m; sourceTree = "<group>"; };
+		A713A53B1C68B30600B911D3 /* CommandExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandExecutor.h; sourceTree = "<group>"; };
+		A713A53C1C68B30600B911D3 /* CommandExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandExecutor.m; sourceTree = "<group>"; };
+		A713A53E1C699F2400B911D3 /* DrawingCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingCommands.h; sourceTree = "<group>"; };
+		A7173C1B1C61F6F900F8D49F /* DrawingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingViewController.h; sourceTree = "<group>"; };
+		A7173C1C1C61F6F900F8D49F /* DrawingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingViewController.m; sourceTree = "<group>"; };
+		A7173C221C62026700F8D49F /* InteractivePainterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractivePainterView.h; sourceTree = "<group>"; };
+		A7173C231C62026700F8D49F /* InteractivePainterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractivePainterView.m; sourceTree = "<group>"; };
+		A7578CDB1C64714E006F6165 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		A7578CDC1C64714E006F6165 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		A7A105F21C86DB6800C6DBFC /* DrawingProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingProperty.h; sourceTree = "<group>"; };
+		A7A105F31C86DB6800C6DBFC /* DrawingProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingProperty.m; sourceTree = "<group>"; };
+		A7A107A91C98364C00C6DBFC /* PencilDrawingCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PencilDrawingCommand.h; sourceTree = "<group>"; };
+		A7A107AA1C98364C00C6DBFC /* PencilDrawingCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PencilDrawingCommand.m; sourceTree = "<group>"; };
+		AD4BB8811B10D56C00E14904 /* MyPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD4BB8851B10D56C00E14904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD4BB8861B10D56C00E14904 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD4BB8881B10D56C00E14904 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD4BB8891B10D56C00E14904 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD4BB88F1B10D56C00E14904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD4BB8911B10D56C00E14904 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AD4BB8941B10D56C00E14904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AD4BB89A1B10D56C00E14904 /* MyPaintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPaintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD4BB89F1B10D56C00E14904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD4BB8A01B10D56C00E14904 /* MyPaintTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPaintTests.m; sourceTree = "<group>"; };
+		D4740BD375D14FA46CEE31B4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E403D1D8C1D080677EC72663 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCE0D50DA6C510DC5C2D69E6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD4BB87E1B10D56C00E14904 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				564A9FAFFAA2057A284D1E3B /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD4BB8971B10D56C00E14904 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AED22A899EB186D8963F4C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E403D1D8C1D080677EC72663 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64EC7C6F72BB155126EF5D2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4740BD375D14FA46CEE31B4 /* Pods.debug.xcconfig */,
+				FCE0D50DA6C510DC5C2D69E6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A713A53F1C699F6B00B911D3 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				A713A53E1C699F2400B911D3 /* DrawingCommands.h */,
+				A713A5321C68AD5C00B911D3 /* DrawingCommand.h */,
+				A713A5331C68AD5C00B911D3 /* DrawingCommand.m */,
+				A713A5351C68AE3500B911D3 /* LineDrawingCommand.h */,
+				A713A5361C68AE3500B911D3 /* LineDrawingCommand.m */,
+				A713A5381C68AE5600B911D3 /* RectDrawingCommand.h */,
+				A713A5391C68AE5600B911D3 /* RectDrawingCommand.m */,
+				A7A107A91C98364C00C6DBFC /* PencilDrawingCommand.h */,
+				A7A107AA1C98364C00C6DBFC /* PencilDrawingCommand.m */,
+			);
+			name = Commands;
+			sourceTree = "<group>";
+		};
+		A7173C211C61F71500F8D49F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7173C221C62026700F8D49F /* InteractivePainterView.h */,
+				A7173C231C62026700F8D49F /* InteractivePainterView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A7578CDE1C647155006F6165 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A7578CDB1C64714E006F6165 /* UIView+Additions.h */,
+				A7578CDC1C64714E006F6165 /* UIView+Additions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		A7578CDF1C6499C5006F6165 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7173C1B1C61F6F900F8D49F /* DrawingViewController.h */,
+				A7173C1C1C61F6F900F8D49F /* DrawingViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AD4BB8781B10D56C00E14904 = {
+			isa = PBXGroup;
+			children = (
+				AD4BB8831B10D56C00E14904 /* MyPaint */,
+				AD4BB89D1B10D56C00E14904 /* MyPaintTests */,
+				AD4BB8821B10D56C00E14904 /* Products */,
+				64EC7C6F72BB155126EF5D2B /* Pods */,
+				4AED22A899EB186D8963F4C9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AD4BB8821B10D56C00E14904 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD4BB8811B10D56C00E14904 /* MyPaint.app */,
+				AD4BB89A1B10D56C00E14904 /* MyPaintTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD4BB8831B10D56C00E14904 /* MyPaint */ = {
+			isa = PBXGroup;
+			children = (
+				A7578CDE1C647155006F6165 /* Categories */,
+				A7173C211C61F71500F8D49F /* Views */,
+				A7578CDF1C6499C5006F6165 /* Controllers */,
+				AD4BB8881B10D56C00E14904 /* AppDelegate.h */,
+				AD4BB8891B10D56C00E14904 /* AppDelegate.m */,
+				A713A53F1C699F6B00B911D3 /* Commands */,
+				A713A53B1C68B30600B911D3 /* CommandExecutor.h */,
+				A713A53C1C68B30600B911D3 /* CommandExecutor.m */,
+				A7A105F21C86DB6800C6DBFC /* DrawingProperty.h */,
+				A7A105F31C86DB6800C6DBFC /* DrawingProperty.m */,
+				AD4BB8911B10D56C00E14904 /* Images.xcassets */,
+				AD4BB88E1B10D56C00E14904 /* Main.storyboard */,
+				AD4BB8931B10D56C00E14904 /* LaunchScreen.xib */,
+				AD4BB8841B10D56C00E14904 /* Supporting Files */,
+			);
+			path = MyPaint;
+			sourceTree = "<group>";
+		};
+		AD4BB8841B10D56C00E14904 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD4BB8851B10D56C00E14904 /* Info.plist */,
+				AD4BB8861B10D56C00E14904 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD4BB89D1B10D56C00E14904 /* MyPaintTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD4BB8A01B10D56C00E14904 /* MyPaintTests.m */,
+				AD4BB89E1B10D56C00E14904 /* Supporting Files */,
+			);
+			path = MyPaintTests;
+			sourceTree = "<group>";
+		};
+		AD4BB89E1B10D56C00E14904 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD4BB89F1B10D56C00E14904 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD4BB8801B10D56C00E14904 /* MyPaint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD4BB8A41B10D56C00E14904 /* Build configuration list for PBXNativeTarget "MyPaint" */;
+			buildPhases = (
+				23C2EDEC597E572E9CE523E1 /* Check Pods Manifest.lock */,
+				AD4BB87D1B10D56C00E14904 /* Sources */,
+				AD4BB87E1B10D56C00E14904 /* Frameworks */,
+				AD4BB87F1B10D56C00E14904 /* Resources */,
+				1DCB8F480A75BC716B7BC90C /* Embed Pods Frameworks */,
+				2D8B9553E07B8A28BCC0E4F3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyPaint;
+			productName = MyPaint;
+			productReference = AD4BB8811B10D56C00E14904 /* MyPaint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD4BB8991B10D56C00E14904 /* MyPaintTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD4BB8A71B10D56C00E14904 /* Build configuration list for PBXNativeTarget "MyPaintTests" */;
+			buildPhases = (
+				AD4BB8961B10D56C00E14904 /* Sources */,
+				AD4BB8971B10D56C00E14904 /* Frameworks */,
+				AD4BB8981B10D56C00E14904 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD4BB89C1B10D56C00E14904 /* PBXTargetDependency */,
+			);
+			name = MyPaintTests;
+			productName = MyPaintTests;
+			productReference = AD4BB89A1B10D56C00E14904 /* MyPaintTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD4BB8791B10D56C00E14904 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Valentina Chernoeva";
+				TargetAttributes = {
+					AD4BB8801B10D56C00E14904 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					AD4BB8991B10D56C00E14904 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = AD4BB8801B10D56C00E14904;
+					};
+				};
+			};
+			buildConfigurationList = AD4BB87C1B10D56C00E14904 /* Build configuration list for PBXProject "MyPaint" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD4BB8781B10D56C00E14904;
+			productRefGroup = AD4BB8821B10D56C00E14904 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD4BB8801B10D56C00E14904 /* MyPaint */,
+				AD4BB8991B10D56C00E14904 /* MyPaintTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD4BB87F1B10D56C00E14904 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4BB8901B10D56C00E14904 /* Main.storyboard in Resources */,
+				AD4BB8951B10D56C00E14904 /* LaunchScreen.xib in Resources */,
+				AD4BB8921B10D56C00E14904 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD4BB8981B10D56C00E14904 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DCB8F480A75BC716B7BC90C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23C2EDEC597E572E9CE523E1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2D8B9553E07B8A28BCC0E4F3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD4BB87D1B10D56C00E14904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7578CDD1C64714E006F6165 /* UIView+Additions.m in Sources */,
+				A713A53A1C68AE5600B911D3 /* RectDrawingCommand.m in Sources */,
+				A7A107AB1C98364C00C6DBFC /* PencilDrawingCommand.m in Sources */,
+				AD4BB88A1B10D56C00E14904 /* AppDelegate.m in Sources */,
+				AD4BB8871B10D56C00E14904 /* main.m in Sources */,
+				A713A5371C68AE3500B911D3 /* LineDrawingCommand.m in Sources */,
+				A7A105F41C86DB6800C6DBFC /* DrawingProperty.m in Sources */,
+				A713A53D1C68B30600B911D3 /* CommandExecutor.m in Sources */,
+				A7173C1D1C61F6F900F8D49F /* DrawingViewController.m in Sources */,
+				A713A5341C68AD5C00B911D3 /* DrawingCommand.m in Sources */,
+				A7173C241C62026700F8D49F /* InteractivePainterView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD4BB8961B10D56C00E14904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4BB8A11B10D56C00E14904 /* MyPaintTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD4BB89C1B10D56C00E14904 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD4BB8801B10D56C00E14904 /* MyPaint */;
+			targetProxy = AD4BB89B1B10D56C00E14904 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD4BB88E1B10D56C00E14904 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD4BB88F1B10D56C00E14904 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD4BB8931B10D56C00E14904 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD4BB8941B10D56C00E14904 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD4BB8A21B10D56C00E14904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AD4BB8A31B10D56C00E14904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD4BB8A51B10D56C00E14904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4740BD375D14FA46CEE31B4 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = MyPaint/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD4BB8A61B10D56C00E14904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCE0D50DA6C510DC5C2D69E6 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = MyPaint/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD4BB8A81B10D56C00E14904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyPaintTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyPaint.app/MyPaint";
+			};
+			name = Debug;
+		};
+		AD4BB8A91B10D56C00E14904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyPaintTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyPaint.app/MyPaint";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD4BB87C1B10D56C00E14904 /* Build configuration list for PBXProject "MyPaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD4BB8A21B10D56C00E14904 /* Debug */,
+				AD4BB8A31B10D56C00E14904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD4BB8A41B10D56C00E14904 /* Build configuration list for PBXNativeTarget "MyPaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD4BB8A51B10D56C00E14904 /* Debug */,
+				AD4BB8A61B10D56C00E14904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD4BB8A71B10D56C00E14904 /* Build configuration list for PBXNativeTarget "MyPaintTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD4BB8A81B10D56C00E14904 /* Debug */,
+				AD4BB8A91B10D56C00E14904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD4BB8791B10D56C00E14904 /* Project object */;
+}
